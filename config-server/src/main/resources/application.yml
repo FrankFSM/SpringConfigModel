@@ -1,0 +1,44 @@
+security:
+  basic:
+    enabled: true
+  user:
+    name: ralap
+    password: hjx969190
+server:
+  port: 8060
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://ralap:hjx969190@localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+spring:
+  application:
+    name: config-provider
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/itFanRalap/{application}
+
+
+
+
+
+
+
+
+#目录配置
+#          search-paths:
+#            - foo #目录结构（子目录foo）http://localhost:8060/master/foo-dev.yml
+#            - bar
+
+
+#模式匹配
+#          repos:
+#            config-test:
+#              pattern: config*/*
+#              uri: https://gitee.com/itFanRalap/config-test
+#            special:
+#              pattern: special*/dev*,special*/pro*
+#              uri: https://gitee.com/itFanRalap/special
