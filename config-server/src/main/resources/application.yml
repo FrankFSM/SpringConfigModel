@@ -22,12 +22,6 @@ spring:
           uri: https://gitee.com/itFanRalap/{application}
 
 
-
-
-
-
-
-
 #目录配置
 #          search-paths:
 #            - foo #目录结构（子目录foo）http://localhost:8060/master/foo-dev.yml
